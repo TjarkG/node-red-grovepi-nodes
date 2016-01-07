@@ -5,7 +5,7 @@ Install via npm
 ---------------
 
 Run the following command in the root directory of your Node-RED install or home directory (usually ~/.node-red)
-    npm install node-red-grovepi-nodes
+> npm install node-red-grovepi-nodes
 
 
 Usage
