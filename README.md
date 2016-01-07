@@ -2,6 +2,7 @@
 Node-RED nodes to control GrovePi+ Starter Kit sensors for Raspberry Pi.
 
 Install via npm
+---------------
 
 Run the following command in the root directory of your Node-RED install or home directory (usually ~/.node-red)
     npm install node-red-grovepi-nodes
