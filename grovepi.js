@@ -87,6 +87,7 @@ module.exports = function(RED) {
     function Led(n) {
         RED.nodes.createNode(this,n);
         this.pin = n.pin;
+        this.sensor = n.sensor;
         var node = this;
 
         node.status({fill:"green",shape:"dot",text:"ok"});
@@ -116,6 +117,10 @@ module.exports = function(RED) {
 
         node.on("close", function(done) {
             node.status({fill:"grey",shape:"ring",text:"Closed"});
+            this.sensor(function(){
+                 done();
+            });
+
         });
     }
     RED.nodes.registerType("grovepi-led",Led);
@@ -125,6 +130,7 @@ module.exports = function(RED) {
     function Relay(n) {
         RED.nodes.createNode(this,n);
         this.pin = n.pin;
+        this.sensor = n.sensor;
         var node = this;
 
         node.status({fill:"green",shape:"dot",text:"ok"});
@@ -154,6 +160,9 @@ module.exports = function(RED) {
 
         node.on("close", function(done) {
             node.status({fill:"grey",shape:"ring",text:"Closed"});
+            this.sensor(function(){
+                 done();
+            });
         });
     }
     RED.nodes.registerType("grovepi-relay",Relay);
@@ -164,6 +173,7 @@ module.exports = function(RED) {
     function Buzzer(n) {
         RED.nodes.createNode(this,n);
         this.pin = n.pin;
+        this.sensor = n.sensor;
         var node = this;
 
         node.status({fill:"green",shape:"dot",text:"ok"});
@@ -193,6 +203,9 @@ module.exports = function(RED) {
 
         node.on("close", function(done) {
             node.status({fill:"grey",shape:"ring",text:"Closed"});
+            this.sensor(function(){
+                 done();
+            });
         });
     }
     RED.nodes.registerType("grovepi-buzzer",Buzzer);
@@ -204,6 +217,7 @@ module.exports = function(RED) {
     function LcdRgb(n) {
         RED.nodes.createNode(this,n);
         var node = this;
+        this.sensor = n.sensor;
 
         node.status({fill:"green",shape:"dot",text:"ok"});
 
@@ -237,6 +251,9 @@ module.exports = function(RED) {
 
         node.on("close", function(done) {
             node.status({fill:"grey",shape:"ring",text:"Closed"});
+            this.sensor(function(){
+                 done();
+            });
         });
     }
     RED.nodes.registerType("grovepi-lcd-rgb",LcdRgb);
@@ -247,6 +264,7 @@ module.exports = function(RED) {
     function UltrasonicRangerSensor(n) {
         RED.nodes.createNode(this,n);
         this.pin = n.pin;
+        this.sensor = n.sensor;
         var node = this;
 
         board.pinMode(node.pin, 'input');
@@ -278,6 +296,9 @@ module.exports = function(RED) {
         node.on("close", function(done) {
             clearInterval(interval);
             node.status({fill:"grey",shape:"ring",text:"Closed"});
+            this.sensor(function(){
+                 done();
+            });
         });
     }
 
@@ -288,6 +309,7 @@ module.exports = function(RED) {
     function RotaryAngleSensor(n) {
         RED.nodes.createNode(this,n);
         this.pin = n.pin;
+        this.sensor = n.sensor;
         var node = this;
 
         board.pinMode(node.pin, 'input');
@@ -317,6 +339,9 @@ module.exports = function(RED) {
 
         node.on('close', function() {
             node.status({fill:"grey",shape:"ring",text:"Closed"});
+            this.sensor(function(){
+                 done();
+            });
             clearInterval(interval);
         });
     }
@@ -329,6 +354,7 @@ module.exports = function(RED) {
     function LightSensor(n) {
         RED.nodes.createNode(this,n);
         this.pin = n.pin;
+        this.sensor = n.sensor;
         var node = this;
 
         board.pinMode(node.pin, 'input');
@@ -358,6 +384,9 @@ module.exports = function(RED) {
 
         node.on('close', function() {
             node.status({fill:"grey",shape:"ring",text:"Closed"});
+            this.sensor(function(){
+                 done();
+            });
             clearInterval(interval);
         });
     }
@@ -370,6 +399,7 @@ module.exports = function(RED) {
     function Button(n) {
         RED.nodes.createNode(this,n);
         this.pin = n.pin;
+        this.sensor = n.sensor;
         var node = this;
 
         var digital = new Digital(node.pin);
@@ -397,6 +427,9 @@ module.exports = function(RED) {
 
         node.on('close', function() {
             node.status({fill:"grey",shape:"ring",text:"Closed"});
+            this.sensor(function(){
+                 done();
+            });
             clearInterval(interval);
         });
 
@@ -411,6 +444,7 @@ module.exports = function(RED) {
     function SoundSensor(n) {
         RED.nodes.createNode(this,n);
         this.pin = n.pin;
+        this.sensor = n.sensor;
         var node = this;
 
         board.pinMode(node.pin, 'input');
@@ -440,6 +474,9 @@ module.exports = function(RED) {
 
         node.on('close', function() {
             node.status({fill:"grey",shape:"ring",text:"Closed"});
+            this.sensor(function(){
+                 done();
+            });
             clearInterval(interval);
         });
     }
@@ -475,6 +512,7 @@ module.exports = function(RED) {
 
         RED.nodes.createNode(this,n);
         this.pin = n.pin;
+        this.sensor = n.sensor;
         var node = this;
 
         board.pinMode(node.pin, 'input');
@@ -518,6 +556,9 @@ module.exports = function(RED) {
 
         node.on('close', function() {
             node.status({fill:"grey",shape:"ring",text:"Closed"});
+            this.sensor(function(){
+                 done();
+            });
             clearInterval(interval);
         });
     }
