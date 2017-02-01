@@ -1,6 +1,6 @@
 {
   "name": "node-red-grovepi-nodes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node-RED nodes to control GrovePi+ sensors.",
   "dependencies": {
     "node-grovepi": "2.1.1"
