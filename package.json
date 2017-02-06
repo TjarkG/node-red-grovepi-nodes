@@ -3,7 +3,9 @@
   "version": "0.0.2",
   "description": "Node-RED nodes to control GrovePi+ sensors.",
   "dependencies": {
-    "node-grovepi": "2.1.1"
+    "node-grovepi": "2.1.1",
+    "i2c-bus": "1.x",
+    "sleep": "3.x"
   },
   "repository": {
     "type": "git",
