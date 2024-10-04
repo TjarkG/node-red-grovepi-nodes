@@ -1,15 +1,14 @@
 {
-  "name": "node-red-grovepi-nodes",
-  "version": "0.0.3",
+  "name": "node-red-grovepi-nodes-th",
+  "version": "0.1.0",
   "description": "Node-RED nodes to control GrovePi+ sensors.",
   "dependencies": {
-    "node-grovepi": "2.1.1",
-    "i2c-bus": "1.x",
-    "sleep": "3.x"
+    "i2c-bus": "5.2.3",
+    "node-grovepi-th": "2.3.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/memetolsen/node-red-grovepi-nodes"
+    "url": "https://github.com/TjarkG/node-red-grovepi-nodes"
   },
   "license": "Apache-2.0",
   "keywords": [

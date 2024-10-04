@@ -15,24 +15,24 @@
 -->
 
 <script type="text/javascript">
-    RED.nodes.registerType('grovepi-led',{
+    RED.nodes.registerType('grovepi-led', {
         category: 'Grove Pi',
-        color:"#c6dbef",
+        color: "#c6dbef",
         defaults: {
-            name: { value:"" },
-            pin: { value:"",required:true,validate:RED.validators.number() },
-            set: { value:"" },
+            name: {value: ""},
+            pin: {value: "", required: true, validate: RED.validators.number()},
+            set: {value: ""},
         },
-        inputs:1,
-        outputs:0,
+        inputs: 1,
+        outputs: 0,
         icon: "rpi.png",
         align: "right",
-        label: function() {
-            return this.name||"Pin: "+this.pin ;
+        label: function () {
+            return this.name || "Pin: " + this.pin;
         },
         paletteLabel: 'LED',
-        labelStyle: function() {
-            return this.name?"node_label_italic":"";
+        labelStyle: function () {
+            return this.name ? "node_label_italic" : "";
         }
     });
 </script>
@@ -65,28 +65,24 @@
 </script>
 
 
-
-
-
-
 <script type="text/javascript">
-    RED.nodes.registerType('grovepi-relay',{
+    RED.nodes.registerType('grovepi-relay', {
         category: 'Grove Pi',
-        color:"#c6dbef",
+        color: "#c6dbef",
         defaults: {
-            name: { value:"" },
-            pin: { value:"",required:true,validate:RED.validators.number() },
+            name: {value: ""},
+            pin: {value: "", required: true, validate: RED.validators.number()},
         },
-        inputs:1,
-        outputs:0,
+        inputs: 1,
+        outputs: 0,
         icon: "rpi.png",
         align: "right",
-        label: function() {
-            return this.name||"Pin: "+this.pin ;
+        label: function () {
+            return this.name || "Pin: " + this.pin;
         },
         paletteLabel: 'Relay',
-        labelStyle: function() {
-            return this.name?"node_label_italic":"";
+        labelStyle: function () {
+            return this.name ? "node_label_italic" : "";
         }
     });
 </script>
@@ -119,28 +115,24 @@
 </script>
 
 
-
-
-
-
 <script type="text/javascript">
-    RED.nodes.registerType('grovepi-buzzer',{
+    RED.nodes.registerType('grovepi-buzzer', {
         category: 'Grove Pi',
-        color:"#c6dbef",
+        color: "#c6dbef",
         defaults: {
-            name: { value:"" },
-            pin: { value:"",required:true,validate:RED.validators.number() },
+            name: {value: ""},
+            pin: {value: "", required: true, validate: RED.validators.number()},
         },
-        inputs:1,
-        outputs:0,
+        inputs: 1,
+        outputs: 0,
         icon: "rpi.png",
         align: "right",
-        label: function() {
-            return this.name||"Pin: "+this.pin ;
+        label: function () {
+            return this.name || "Pin: " + this.pin;
         },
         paletteLabel: 'Buzzer',
-        labelStyle: function() {
-            return this.name?"node_label_italic":"";
+        labelStyle: function () {
+            return this.name ? "node_label_italic" : "";
         }
     });
 </script>
@@ -173,26 +165,23 @@
 </script>
 
 
-
-
-
 <script type="text/javascript">
-    RED.nodes.registerType('grovepi-lcd-rgb',{
+    RED.nodes.registerType('grovepi-lcd-rgb', {
         category: 'Grove Pi',
-        color:"#c6dbef",
+        color: "#c6dbef",
         defaults: {
-            name: { value:"" },
+            name: {value: ""},
         },
-        inputs:1,
-        outputs:0,
+        inputs: 1,
+        outputs: 0,
         icon: "rpi.png",
         align: "right",
-        label: function() {
-            return this.name||"LCD rgb" ;
+        label: function () {
+            return this.name || "LCD rgb";
         },
         paletteLabel: 'LCD rgb',
-        labelStyle: function() {
-            return this.name?"node_label_italic":"";
+        labelStyle: function () {
+            return this.name ? "node_label_italic" : "";
         }
     });
 </script>
@@ -213,27 +202,23 @@
 </script>
 
 
-
-
-
-
 <script type="text/javascript">
-    RED.nodes.registerType('grovepi-ultrasonic',{
+    RED.nodes.registerType('grovepi-ultrasonic', {
         category: 'Grove Pi',
-        color:"#c6dbef",
+        color: "#c6dbef",
         defaults: {
-            name: { value:"" },
-            pin: { value:"",required:true,validate:RED.validators.number() },
+            name: {value: ""},
+            pin: {value: "", required: true, validate: RED.validators.number()},
         },
-        inputs:0,
-        outputs:1,
+        inputs: 0,
+        outputs: 1,
         icon: "rpi.png",
-        label: function() {
-            return this.name||"Pin: "+this.pin ;
+        label: function () {
+            return this.name || "Pin: " + this.pin;
         },
         paletteLabel: 'Ultrasonic',
-        labelStyle: function() {
-            return this.name?"node_label_italic":"";
+        labelStyle: function () {
+            return this.name ? "node_label_italic" : "";
         }
     });
 </script>
@@ -266,25 +251,23 @@
 </script>
 
 
-
-
 <script type="text/javascript">
-    RED.nodes.registerType('grovepi-rotary',{
+    RED.nodes.registerType('grovepi-rotary', {
         category: 'Grove Pi',
-        color:"#c6dbef",
+        color: "#c6dbef",
         defaults: {
-            name: { value:"" },
-            pin: { value:"",required:true,validate:RED.validators.number() },
+            name: {value: ""},
+            pin: {value: "", required: true, validate: RED.validators.number()},
         },
-        inputs:0,
-        outputs:1,
+        inputs: 0,
+        outputs: 1,
         icon: "rpi.png",
-        label: function() {
-            return this.name||"Pin: "+this.pin ;
+        label: function () {
+            return this.name || "Pin: " + this.pin;
         },
         paletteLabel: 'Rotary',
-        labelStyle: function() {
-            return this.name?"node_label_italic":"";
+        labelStyle: function () {
+            return this.name ? "node_label_italic" : "";
         }
     });
 </script>
@@ -313,26 +296,23 @@
 </script>
 
 
-
-
-
 <script type="text/javascript">
-    RED.nodes.registerType('grovepi-light',{
+    RED.nodes.registerType('grovepi-light', {
         category: 'Grove Pi',
-        color:"#c6dbef",
+        color: "#c6dbef",
         defaults: {
-            name: { value:"" },
-            pin: { value:"",required:true,validate:RED.validators.number() },
+            name: {value: ""},
+            pin: {value: "", required: true, validate: RED.validators.number()},
         },
-        inputs:0,
-        outputs:1,
+        inputs: 0,
+        outputs: 1,
         icon: "rpi.png",
-        label: function() {
-            return this.name||"Pin: "+this.pin ;
+        label: function () {
+            return this.name || "Pin: " + this.pin;
         },
         paletteLabel: 'Light',
-        labelStyle: function() {
-            return this.name?"node_label_italic":"";
+        labelStyle: function () {
+            return this.name ? "node_label_italic" : "";
         }
     });
 </script>
@@ -361,25 +341,23 @@
 </script>
 
 
-
-
 <script type="text/javascript">
-    RED.nodes.registerType('grovepi-button',{
+    RED.nodes.registerType('grovepi-button', {
         category: 'Grove Pi',
-        color:"#c6dbef",
+        color: "#c6dbef",
         defaults: {
-            name: { value:"" },
-            pin: { value:"",required:true,validate:RED.validators.number() },
+            name: {value: ""},
+            pin: {value: "", required: true, validate: RED.validators.number()},
         },
-        inputs:0,
-        outputs:1,
+        inputs: 0,
+        outputs: 1,
         icon: "rpi.png",
-        label: function() {
-            return this.name||"Pin: "+this.pin ;
+        label: function () {
+            return this.name || "Pin: " + this.pin;
         },
         paletteLabel: 'Button',
-        labelStyle: function() {
-            return this.name?"node_label_italic":"";
+        labelStyle: function () {
+            return this.name ? "node_label_italic" : "";
         }
     });
 </script>
@@ -412,26 +390,23 @@
 </script>
 
 
-
-
-
 <script type="text/javascript">
-    RED.nodes.registerType('grovepi-sound',{
+    RED.nodes.registerType('grovepi-sound', {
         category: 'Grove Pi',
-        color:"#c6dbef",
+        color: "#c6dbef",
         defaults: {
-            name: { value:"" },
-            pin: { value:"",required:true,validate:RED.validators.number() },
+            name: {value: ""},
+            pin: {value: "", required: true, validate: RED.validators.number()},
         },
-        inputs:0,
-        outputs:1,
+        inputs: 0,
+        outputs: 1,
         icon: "rpi.png",
-        label: function() {
-            return this.name||"Pin: "+this.pin ;
+        label: function () {
+            return this.name || "Pin: " + this.pin;
         },
         paletteLabel: 'Sound',
-        labelStyle: function() {
-            return this.name?"node_label_italic":"";
+        labelStyle: function () {
+            return this.name ? "node_label_italic" : "";
         }
     });
 </script>
@@ -460,24 +435,23 @@
 </script>
 
 
-
 <script type="text/javascript">
-    RED.nodes.registerType('grovepi-temperature',{
+    RED.nodes.registerType('grovepi-temperature', {
         category: 'Grove Pi',
-        color:"#c6dbef",
+        color: "#c6dbef",
         defaults: {
-            name: { value:"" },
-            pin: { value:"",required:true,validate:RED.validators.number() },
+            name: {value: ""},
+            pin: {value: "", required: true, validate: RED.validators.number()},
         },
-        inputs:0,
-        outputs:1,
+        inputs: 0,
+        outputs: 1,
         icon: "rpi.png",
-        label: function() {
-            return this.name||"Pin: "+this.pin ;
+        label: function () {
+            return this.name || "Pin: " + this.pin;
         },
         paletteLabel: 'DHT',
-        labelStyle: function() {
-            return this.name?"node_label_italic":"";
+        labelStyle: function () {
+            return this.name ? "node_label_italic" : "";
         }
     });
 </script>
